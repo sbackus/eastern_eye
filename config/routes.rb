@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get "/kitty", to: "kitty#index"
+  get "kitty/weapon", to: "weapon#index"
+
+  resource :kitty, only: [:index, :new, :create] do
+    resource :weapon, only: [:index, :new, :create]
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

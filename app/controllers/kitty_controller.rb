@@ -1,4 +1,4 @@
-class ClientsController < ApplicationController
+class KittyController < ApplicationController
   def new
     @kitty = Kitty.new
   end
@@ -15,6 +15,6 @@ class ClientsController < ApplicationController
   end
 
   def index
-    @kitties = Kitties.all
+    @kitties = Kitty.all
   end
 end
