@@ -1,0 +1,8 @@
+<h1>Create your Kitty</h1>
+
+<%= form_for :kitty, action: :create do |f| %>
+  Name <%= f.text_field :name %><br />
+  Animal <%= f.text_field :animal %><br />
+  Health <%= f.text_field :health %><br />
+  <%= f.submit "Make your Kitty" %>
+<% end %>

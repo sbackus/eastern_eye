@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get "/kitty", to: "kitty#index"
   get "kitty/weapon", to: "weapon#index"
 
-  resource :kitty, only: [:index, :new, :create] do
+  resource :kitty, only: [:index, :new, :create, :show], controller: 'kitty' do
     resource :weapon, only: [:index, :new, :create]
   end
 
