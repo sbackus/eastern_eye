@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  damage: 1
+  durability: 1
+  image: MyString
+  type: 
+
+two:
+  damage: 1
+  durability: 1
+  image: MyString
+  type: 
